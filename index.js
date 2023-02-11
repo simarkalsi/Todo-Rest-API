@@ -9,6 +9,7 @@ const cors = require('cors');
 const product = require('./models/product')
 
 app.use(express.json());
+app.use(cors());
 
 
 app.use("/", products_routes)
